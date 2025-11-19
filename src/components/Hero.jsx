@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import profileHero from "../assets/1.png";
 import { useEffect, useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaEnvelope,
+  FaDownload,
+} from "react-icons/fa";
 
 const Hero = () => {
   const [ready, setReady] = useState(false);
@@ -34,15 +41,6 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full max-w-7xl gap-12 lg:gap-16">
         {/* Text */}
         <div className="order-2 lg:order-1 flex-1 lg:max-w-2xl text-center lg:text-left">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="mb-4 inline-block rounded-full border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/30 px-4 py-2 text-sm font-medium text-blue-700 dark:text-blue-300"
-          >
-            👋 Welcome to my portfolio
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,30 +78,82 @@ const Hero = () => {
             >
               View Projects
             </a>
+            <a
+              href="/CV.pdf"
+              download="Muhammad Ahmed CV.pdf"
+              className="flex items-center gap-2 rounded-lg bg-slate-700 dark:bg-slate-600 px-8 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-slate-800 dark:hover:bg-slate-700 hover:shadow-xl"
+            >
+              <FaDownload /> Download CV
+            </a>
           </motion.div>
         </div>
 
         {/* Image */}
-        {ready ? (
+        <div className="order-1 lg:order-2 flex flex-col items-center gap-6">
+          {ready ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl border-4 border-blue-600 overflow-hidden shadow-2xl"
+            >
+              <img
+                src={profileHero}
+                alt="Profile"
+                className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                draggable={false}
+              />
+            </motion.div>
+          ) : (
+            <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl border-4 border-blue-600 overflow-hidden shadow-2xl animate-pulse bg-slate-200 dark:bg-slate-700" />
+          )}
+
+          {/* Social */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="order-1 lg:order-2 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl border-4 border-blue-600 overflow-hidden shadow-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex items-center gap-4"
           >
-            <img
-              src={profileHero}
-              alt="Profile"
-              className="w-full h-full object-cover"
-              loading="eager"
-              decoding="async"
-              fetchpriority="high"
-              draggable={false}
-            />
+            <a
+              href="https://github.com/Ahmed9253"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-700 dark:bg-slate-600 text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 hover:shadow-lg"
+              aria-label="GitHub"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-700 dark:bg-slate-600 text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 hover:shadow-lg"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://twitter.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-700 dark:bg-slate-600 text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 hover:shadow-lg"
+              aria-label="Twitter"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="mailto:your.email@example.com"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-700 dark:bg-slate-600 text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 hover:shadow-lg"
+              aria-label="Email"
+            >
+              <FaEnvelope size={20} />
+            </a>
           </motion.div>
-        ) : (
-          <div className="order-1 lg:order-2 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl border-4 border-blue-600 overflow-hidden shadow-2xl animate-pulse bg-slate-200" />
-        )}
+        </div>
       </div>
     </div>
   );
