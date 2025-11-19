@@ -1,0 +1,73 @@
+{
+  "hash": "f2009df6",
+  "configHash": "f305e77b",
+  "lockfileHash": "ba57e12a",
+  "browserHash": "4fc20914",
+  "optimized": {
+    "@splinetool/react-spline": {
+      "src": "../../node_modules/@splinetool/react-spline/dist/react-spline.js",
+      "file": "@splinetool_react-spline.js",
+      "fileHash": "8ad73644",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "c9c426f5",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "cfc3d444",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "16cd31f3",
+      "needsInterop": true
+    },
+    "react-icons/ai": {
+      "src": "../../node_modules/react-icons/ai/index.mjs",
+      "file": "react-icons_ai.js",
+      "fileHash": "c01fd67f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "boolean-DDBMZGXZ": {
+      "file": "boolean-DDBMZGXZ.js"
+    },
+    "howler-BZW7Y3HP": {
+      "file": "howler-BZW7Y3HP.js"
+    },
+    "opentype-UAC3LJHQ": {
+      "file": "opentype-UAC3LJHQ.js"
+    },
+    "ui-FSX56M43": {
+      "file": "ui-FSX56M43.js"
+    },
+    "gaussian-splat-compression-2OE4MBZT": {
+      "file": "gaussian-splat-compression-2OE4MBZT.js"
+    },
+    "chunk-TMELWAXR": {
+      "file": "chunk-TMELWAXR.js"
+    },
+    "chunk-J63SQRER": {
+      "file": "chunk-J63SQRER.js"
+    },
+    "navmesh-KWXWMHIC": {
+      "file": "navmesh-KWXWMHIC.js"
+    },
+    "physics-LQPUKR5T": {
+      "file": "physics-LQPUKR5T.js"
+    },
+    "process-QSCV2CYT": {
+      "file": "process-QSCV2CYT.js"
+    },
+    "chunk-PLDDJCW6": {
+      "file": "chunk-PLDDJCW6.js"
+    }
+  }
+}

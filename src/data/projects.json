@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "A modern portfolio built with React, Tailwind, and Framer Motion.",
+    "tech": ["React", "Tailwind", "Framer Motion"],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    "link": "https://github.com"
+  },
+  {
+    "id": 2,
+    "title": "E-Commerce App",
+    "description": "Full-stack MERN e-commerce platform with cart and payment integration.",
+    "tech": ["MongoDB", "Express", "React", "Node.js"],
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+    "link": "https://github.com"
+  },
+  {
+    "id": 3,
+    "title": "Chat Application",
+    "description": "Real-time chat app using Socket.io and modern UI design.",
+    "tech": ["React", "Node.js", "Socket.io"],
+    "image": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&h=600&fit=crop",
+    "link": "https://github.com"
+  },
+  {
+    "id": 4,
+    "title": "Task Manager",
+    "description": "A productivity app for managing tasks with drag-and-drop support.",
+    "tech": ["React", "Redux", "Tailwind"],
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+    "link": "https://github.com"
+  }
+]
